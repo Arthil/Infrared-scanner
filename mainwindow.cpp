@@ -35,6 +35,7 @@ MainWindow::MainWindow(QWidget *parent) :
     port_available = false;
     port = new QSerialPort;
 
+    //Get all the available ports
 
     qDebug() << "Number of available ports: " << QSerialPortInfo::availablePorts().length();
     foreach(const QSerialPortInfo &serialPortInfo, QSerialPortInfo::availablePorts())
@@ -70,6 +71,7 @@ MainWindow::MainWindow(QWidget *parent) :
     init_port();
 }
 
+//Initializes the properties of a port, also shows a warning if no port was found
 void MainWindow::init_port()
 {
 
@@ -100,6 +102,7 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
+//Function used for custom commands inside application which is used to communicate with the arduino device
 void MainWindow::send_command(QString command)
 {
     if(port->isWritable())
@@ -112,8 +115,10 @@ void MainWindow::send_command(QString command)
     }
 }
 
+
 void MainWindow::read_serial()
 {
+    //Read the data from a serialport and parse it
     serialData = port->readLine(1024);
     serialBuffer = QString::fromStdString(serialData.toStdString());
     QStringList bufferSplit = serialBuffer.split(",");
@@ -128,7 +133,7 @@ void MainWindow::read_serial()
 
         qDebug() << i;
 
-
+    //if the point is viable, push it to the points vector
         if(i >= 25 && i < 500)
         {
             points.push_back(i);
@@ -141,6 +146,7 @@ void MainWindow::read_serial()
 
 }
 
+//Send the scanning command to the arduino device
 void MainWindow::on_button_scan_clicked()
 {
     ui->stackedWidget->setCurrentIndex(2);
@@ -193,7 +199,9 @@ void MainWindow::on_button_back_2_clicked()
 }
 
 
-
+//This function paints the scanner itself
+//One part is the rotating scanner which is just doing a circle
+//Second part draws the data found from points vector to the screen
 void MainWindow::paintEvent(QPaintEvent *e)
 {
     QPainter painter(this);
@@ -236,6 +244,7 @@ void MainWindow::paintEvent(QPaintEvent *e)
     painter.setPen(pointpen);
 
     //Draw the radar points if showRadar == true
+    //Draw the data from points vector
     if(showRadar == true)
     {
         for(int i = 0; i < points.size() ;i++)
