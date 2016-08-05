@@ -12,10 +12,10 @@ Some pictures of the working scanner:
 Main menu:
 ![alt tag](https://github.com/Arthil/Infrared-scanner/blob/master/Scanner%20pictures/Infrared%20scanner%20menu.png?raw=true)
 
-The complete product:
+Exposed arduino and the infrared camera
 ![alt tag](https://github.com/Arthil/Infrared-scanner/blob/master/Scanner%20pictures/infrared%20scanner%20inside.jpg?raw=true)
 
-Exposed arduino and the infrared camera
+The complete product:
 ![alt tag](https://github.com/Arthil/Infrared-scanner/blob/master/Scanner%20pictures/infrared%20scanner.jpg?raw=true)
 
 A small demo gif with random test points to show scanner functionality:
