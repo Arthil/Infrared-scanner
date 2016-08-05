@@ -13,6 +13,9 @@ There is still room for some improvement in the GUI side of the program. Now the
 
 Some pictures of the working scanner:
 
+A scanner test run (as can be seen from the gif, distances above 5m are very inaccurate):
+![alt tag](https://github.com/Arthil/Infrared-scanner/blob/master/Scanner%20pictures/scanner_working.gif?raw=true)
+
 Main menu:
 ![alt tag](https://github.com/Arthil/Infrared-scanner/blob/master/Scanner%20pictures/Infrared%20scanner%20menu.png?raw=true)
 
@@ -22,6 +25,6 @@ Exposed arduino and the infrared camera
 The complete product:
 ![alt tag](https://github.com/Arthil/Infrared-scanner/blob/master/Scanner%20pictures/infrared%20scanner.jpg?raw=true)
 
-A scanner test run (as can be seen from the gif distances above 5m are very unaccurate):
 
-![alt tag]()
+
+
