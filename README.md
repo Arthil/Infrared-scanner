@@ -11,7 +11,7 @@ The infrared camera scans semi-accurately if the scan distance is between 1 and 
 1. Infrared_scanner_arduino.ino is the arduino microcontroller program
 2. Everything else is part of the infrared scanner QtGUI
 
-There is still room for some improvement in the GUI side of the program. Now the datapoints are being drawn to the GUI almost directly. The problem is that some points are more unrealiable than others or may have some stuttering. If developed further, an algorithm should be added to go through the data and cleaning the overall result by removing bad data points.
+There is still room for some improvement in the GUI side of the program. Now the data points are being drawn to the GUI almost completely unprocessed. The problem is that some points are more unrealiable than others or may have some stuttering. If developed further, an algorithm should be added to go through the data and cleaning the overall result by removing bad data points.
 
 Some pictures of the working scanner:
 
