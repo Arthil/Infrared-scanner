@@ -1,4 +1,6 @@
 # Infrared-scanner
+
+The complete project (hardware + software + design) was made with a group of three people but I created the software.
 A software created for a infrared scanner using Qt and c++ for the pc part and arduino (basically C) for the microcontroller. 
 The program consist of two parts. The computer and a microcontroller (arduino).
 The computer sends commands to the through the serialport and listens to the port to fetch data gathered by the arduino device.
