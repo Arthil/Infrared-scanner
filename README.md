@@ -9,4 +9,5 @@ The computer sends commands to the through the serialport and listens to the por
 
 Some pictures of the working scanner:
 
-
+![alt tag](https://github.com/Arthil/Infrared-scanner/blob/master/Scanner%20pictures/infrared%20scanner%20inside.jpg?raw=true)
+![alt tag](https://github.com/Arthil/Infrared-scanner/blob/master/Scanner%20pictures/infrared%20scanner.jpg?raw=true)
