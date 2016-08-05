@@ -3,6 +3,9 @@ A software created for a infrared scanner using Qt and c++ for the pc part and a
 The program consist of two parts. The computer and a microcontroller (arduino).
 The computer sends commands to the through the serialport and listens to the port to fetch data gathered by the arduino device.
 
+The scanner scans roughly a 180 degree area around it.
+The infrared camera scans semi-accurately if the scandistance is between 1 and 5 meters. Outside this area the results are not reliable.
+
 1. Infrared_scanner_arduino.ino is the arduino microcontroller program
 2. Everything else is part of the infrared scanner QtGUI
 
